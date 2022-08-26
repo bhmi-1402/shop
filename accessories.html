@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop </title>
+    <link rel="stylesheet" href="home.css">
+
+<!-- font family -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+<!-- end font -->
+
+<!-- bootstrap -->
+<!-- CSS only -->
+<link rel="stylesheet" href="Responsive.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+<!-- Ennd JavaScript -->
+</head>
+<body>
+ <!-- Navbar -->
+    <header id="header">
+         <div id="hamBurger"><i class="bi bi-three-dots"></i>
+         </div>
+         <div id="brandname">
+            Venom eStore
+        </div>
+        <div id="icons">
+            <!-- <div id="cross"><i class="bi bi-arrow-left"></i></div>  -->
+            
+            <a href="index.html"><i class="bi fa-3x fa-xl bi-house" style="font-size:2em"></i></a>
+            <a href="cart.html"><i class="bi bi-bag" style="font-size:2em"></i></a>
+            
+            <a href="help.html"><i class="bi bi-telephone" style="font-size:2em"></i></a>
+            <a href="wishlist.html"> <i class="bi bi-heart-fill" style="font-size:2em"></i></a>
+           
+            <!-- <i class="bi bi-info-circle-fill" style="font-size:2em"></i> -->
+        </div>
+
+        <div id="sidebar">
+       <i class="bi bi-arrow-left" style="font-size:2em;" id="cross"></i>
+             <div>
+                
+                <a href="index.html"><i class="bi fa-3x fa-xl bi-house" style="font-size:2em"></i></a>
+                Home
+               <a href="cart.html"> <i class="bi bi-bag" style="font-size:2em"></i></a>Cart
+                
+                <a href="wishlist.html"><i class="bi bi-heart-fill" style="font-size:2em"></i></a>
+                Wishlist
+                
+                <a href="help.html"><i class="bi bi-telephone" style="font-size:2em"></i></a>
+                Help
+               
+                <a href=""> <i class="bi bi-geo-alt"style="font-size:2em"></i></a>
+                YourLocation 
+                
+                <a href=""><i class="bi bi-graph-up-arrow"style="font-size:2em"></i></a>
+                Track Your Order
+                
+                <a href=""><i class="bi bi-hand-thumbs-up"style="font-size:2em"></i></a>
+                Support Me
+             </div>
+            <div>
+                <div>
+                        <p>
+                            You Can Shop Anything You want
+                        </p>
+                        <p>
+                            Feel Free to shop
+                        </p>
+                </div>
+            </div> 
+        </div>
+    </header>
+    <!-- Navbar End -->
+
+    <div id="subheader">
+        <a href="index.html">Home</a>
+        <a href="help.html">About</a>
+        <a  href="#">location</a>
+        <a href="cart.html">Cart</a>
+    </div>
+  
+
+    <p>Select a category</p>
+
+    <div id="categoriescontainer">
+
+   
+      <div class="table">
+         <p> <input type="radio" name="gender">Male </p>
+         <p> <input type="radio" name="gender">Female </p>
+         <p> <input type="radio" name="gender">Kids</p>
+
+      </div>
+      <div class="table" id="maleclothes">
+         <p> <input type="radio" name="clothtype">Watches</p>
+         <p> <input type="radio" name="clothtype">Smart Watches</p>
+         <p> <input type="radio" name="clothtype">Belts</p>
+         <p> <input type="radio" name="clothtype">Sunglasses</p>
+         <p> <input type="radio" name="clothtype">headphones</p>
+         <p> <input type="radio" name="clothtype">footwear</p>
+      </div>
+
+      <div class="table" id="femaleclothes">
+        <p> <input type="radio" name="clothtype">Jewellery</p>
+        <p> <input type="radio" name="clothtype">Purses</p>
+        <p> <input type="radio" name="clothtype">handbangs</p>
+        <p> <input type="radio" name="clothtype">watches</p>
+        <p> <input type="radio" name="clothtype">Bracelets</p>
+        <p> <input type="radio" name="clothtype">Others</p>
+     </div>
+
+     
+     <div class="table" id="kidsclothes">
+        <p> <input type="radio" name="clothtype">Superhero bandana</p>
+        <p> <input type="radio" name="clothtype">Costumes add ons</p>
+        <p> <input type="radio" name="clothtype">Marvel </p>
+        <p> <input type="radio" name="clothtype">Watches</p>
+        <p> <input type="radio" name="clothtype">Shoes</p>
+        <p> <input type="radio" name="clothtype">School items</p>
+     </div>
+
+
+      <div class="table" id="pricerange">
+         <p> <input type="radio" name="price" > <500 </p>
+         <p> <input type="radio" name="price" >  500-1000 </p>
+         <p> <input type="radio" name="price" > 1000-1500 </p>
+         <p> <input type="radio" name="price" > 1500-2000 </p>
+         <p> <input type="radio" name="price" > 2000-3000</p>
+         <p> <input type="radio" name="price" > 3000> </p>
+      </div>
+    </div>
+
+    <div id="buttongroup">
+        <a href="#"><button onclick="showloader(1000)">Browse</button></a>
+        <a href="index.html"><button>Back to Home</button></a>
+    </div>
+
+    <div id="alertcontainer">
+        <div id="alert">
+         Successfully  Done !!
+            <div>
+        <div id="loader1"></div>
+        <div id="loader2"></div>
+        <div id="loader3"></div>
+            </div>
+          </div>
+      </div>
+
+
+    <footer style="font-size: 0.8rem;">
+        <div> <p>Contact</p>
+          <ul>
+            <li>Creator : Naveen Chaudhary</li>
+            <li>Address: Tasinga Bisawar Hathras </li>
+            <li>Phone:  6395******</li>
+            <li>Follow us</li>
+            <li><a href="">Instagram</a></li>
+          </ul>
+         </div>
+    
+        <div> <p>About</p>
+       <ul>
+        <li>About us</li>
+        <li>Deleivery Information</li>
+        <li>privacy policy</li>
+        <li>Terms & Condition</li>
+        <li>Contact us</li>
+       </ul>
+        </div>
+    <div> <p>My Account</p>
+    
+        <ul>
+            <li>Sign IN</li>
+            <li>View Cart</li>
+            <li>My Wishlist</li>
+            <li>Track My Order</li>
+            <li>Help</li>
+        </ul>
+    
+     </div>
+    </footer>
+    
+    
+    
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="home.js"></script>
+    </body>
+    </html>

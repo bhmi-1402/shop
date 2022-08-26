@@ -1,0 +1,61 @@
+*
+{
+    font-weight: bold;
+}
+.img>img
+{
+    width:90vw;
+    box-sizing: border-box;
+    max-width: 500px;
+    align-self: center;
+    
+}
+#about
+{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.bio>p
+{
+    font-size: larger;
+    font-weight: bolder;
+    font-weight: 8000;
+    font-family: "Eras ITC";
+}
+
+.contact>ul
+{
+ margin-top: 20px;   
+list-style: none;
+color: black;
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+li
+{
+    margin: 10px;
+}
+
+li
+{
+    font-weight: bolder;
+
+}
+
+.contact>p
+{
+    margin-top: 20px;
+}
+@media (max-width :600px)
+{
+    #about
+    {
+        display: flex;
+        justify-content: center;
+        /* border: px solid blue; */
+    }
+}

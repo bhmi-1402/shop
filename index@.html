@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop </title>
+    <link rel="stylesheet" href="home.css">
+
+<!-- font family -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+<!-- end font -->
+
+<!-- bootstrap -->
+<!-- CSS only -->
+<link rel="stylesheet" href="Responsive.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+<!-- Ennd JavaScript -->
+
+<style>
+  *{
+    font-family: 'Poppins','Franklin Gothic Book',sans-serif;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: rgb(81, 30, 183);
+    color:white ;
+
+    width: 100vw;
+    /* font-size: 2em; */
+}
+#brandname
+{
+    font-size: 2em;
+    font-weight: bolder;
+    /* margin: px; */
+}
+#icons
+{
+    display: flex;
+    justify-content: space-around;   
+    /* border: 1px solid red; */
+}
+#icons>i{
+    margin: 0px 0.5em;
+}
+#icons :hover
+{
+    transform: scale(1.2);
+    
+}
+
+#subheader>a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.bi
+{
+    transition: all;
+
+}
+#hamBurger
+{
+    display: none;
+    transition: all;
+}
+
+
+/* NavBar End */
+
+#subheader
+{  width: 100vw;
+    background-color: rgb(236, 236, 236);
+    padding: 10px 0px;
+    box-shadow: rgb(203, 203, 203) 5px 5px 5px;
+}
+#subheader>a
+{
+    margin: auto 10px;
+}
+#subheader>a:hover
+{
+    text-decoration: underline;
+}
+#carausel
+{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+#carausel>p{
+    margin: 10px auto;
+}
+#sale
+{
+    color: blueviolet;
+    margin: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+#saledetails
+{
+ color: blueviolet;
+ font-weight: 1000;
+ font-size: 3rem;
+ text-align: center;
+ margin-bottom: 10px;
+ box-sizing: border-box;
+ width: 100vw;
+
+}
+#saleinfo
+{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+button:hover
+{
+    border: 2px solid blueviolet;
+    color: blueviolet;
+    background-color: white;
+    
+}
+#banner
+{
+    /* border: 1px solid red; */
+    width: 100vw;
+    height:100vw;
+    margin: 12px 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    max-height:600px;
+    background-image: url("bag.jpg");
+    background-size: contain;
+    
+}
+#banner>div>p
+{
+    margin: 10px auto ;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    
+}
+
+#banner>div
+{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 40%;
+    background: linear-gradient(to top , rgba(0, 0, 0, 0.71) , rgba(255, 255, 255, 0));
+}
+
+.button
+{
+    width: 20vw;
+    height: 10vw;
+    font-size: 1rem;
+    border-radius: 12px;
+    font-weight: bold;
+    border: 2px solid white;
+    color: rgb(255, 255, 255);
+    background-color: blueviolet;
+    margin: auto;
+    max-width:10rem;
+    max-height: 4rem;
+    min-width: 80px;
+    min-height: 50px;
+    box-sizing: border-box;
+
+}
+.linebreaker
+{
+    border-top: 4px solid blueviolet;
+    width: 80vw;
+    margin: 10px auto;
+    height: 0px;
+    border-radius: 10px;
+
+}
+.divtitle
+{
+    display: flex;
+    flex-direction: row;
+   /* border: 1px solid green; */
+}
+
+.divtitle>span
+{
+    text-align: center;
+    font-size: 3rem;
+    margin: auto;
+    /* border: 1px solid red; */
+    /* text-decoration: underline; */
+}
+.divtitle>div
+{
+    border-top: 3px solid rgb(127, 126, 126);
+    width: 30vw;
+    height: 0px;
+    margin: auto;
+}
+
+footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(230, 227, 227);
+}
+footer>div>p
+{
+    font-weight: bolder;
+}
+footer>div>ul
+{
+list-style: none;
+font-weight: bold;
+}
+#sidebar
+{    
+    
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(93, 111, 111);
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+#sidebar>div
+{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+#sidebar:nth-child(1):hover
+{
+color: blueviolet;
+}
+#cross
+{
+    position:absolute;
+    right: 0px;
+}
+
+@media screen and (max-width:1000px)
+{   
+    #icons
+    {
+        display: none;
+    }
+    #brandname
+    {
+        text-align: center;
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        margin: 6px auto;
+    }
+    #hamBurger
+    {
+        /* border: 1px solid red; */
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        display: inline-block;
+        font-size: 1.5em;
+        padding-left: 5px;
+        transition: all;
+    }
+
+}
+
+</style>
+</head>
+<body>
+ <!-- Navbar -->
+    <header id="header">
+         <div id="hamBurger"><i class="bi bi-three-dots"></i>
+         </div>
+         <div id="brandname">
+            Venom eStore
+        </div>
+        <div id="icons">
+            <!-- <div id="cross"><i class="bi bi-arrow-left"></i></div>  -->
+            <i class="bi fa-3x fa-xl bi-house" style="font-size:2em"></i>
+            <i class="bi bi-bag" style="font-size:2em"></i>
+            <i class="bi bi-telephone" style="font-size:2em"></i>
+            <i class="bi bi-heart" style="font-size:2em"></i>
+            <!-- <i class="bi bi-info-circle-fill" style="font-size:2em"></i> -->
+        </div>
+
+        <div id="sidebar">
+       <i class="bi bi-arrow-left" style="font-size:2em;" id="cross"></i>
+             <div>
+                <i class="bi fa-3x fa-xl bi-house" style="font-size:2em"></i>Home
+                <i class="bi bi-bag" style="font-size:2em"></i>Cart
+                <i class="bi bi-heart" style="font-size:2em"></i>Wishlist
+                <i class="bi bi-telephone" style="font-size:2em"></i>Help
+                <i class="bi bi-geo-alt"style="font-size:2em"></i>YourLocation 
+                <i class="bi bi-graph-up-arrow"style="font-size:2em"></i>Track Your Order
+                <i class="bi bi-hand-thumbs-up"style="font-size:2em"></i>Support Me
+             </div>
+            <div>
+                <div>
+                        <p>
+                            You Can Shop Anything You want
+                        </p>
+                        <p>
+                            Feel Free to shop
+                        </p>
+                </div>
+            </div> 
+        </div>
+    </header>
+    <!-- Navbar End -->
+
+    <div id="subheader">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a  href="">location</a>
+        <a href="">Cart</a>
+    </div>
+
+<!-- Caraosel -->
+<div id="carausel">
+
+ <p id="sale">Big Sale</p>
+ <p id="saledetails">Up to 60% off on purchase of 1000+</p>
+ <p id="saleinfo">get 60% of on cosmetics , hygiene items , offer valid only limited days
+    <span><a href="http://">T&C apply</a></span>
+ </p>
+ <button id="cosmeticbtn" class="button">Browse Cosmetics</button>
+
+ 
+ <div id="banner">
+ <div>
+     <button style="margin: 5px auto;" class="button">Shop Now</button>
+     <p>thousand of products available at your doorstep , less than market price</p>
+ </div>
+ </div>
+</div>
+<!-- carausel End -->
+
+<!-- Tab -->
+<!-- <div class="divtitle"><div></div><span>featured</span><div></div></div> -->
+
+
+<!-- <div id="featured">
+    
+    <div class="featured card">
+        
+    </div>
+    <div class="featured card">
+
+    </div>
+    <div class="featured card">
+        
+    </div>
+    <div class="featured card">
+        
+    </div>
+    <div class="featured card">
+        
+    </div>
+    <div class="featured card">
+        
+    </div>
+    <div class="featured card">
+        
+    </div>
+    <div class="featured card">
+        
+    </div>
+    
+</div>
+
+
+<div class="divtitle"><div></div><span>Categories</span><div></div></div>
+<div class="divtitle"><div></div><span>Sale</span><div></div></div> -->
+
+
+<footer>
+    <div> <p>Contact</p>
+      <ul>
+        <li>Creator : Naveen Chaudhary</li>
+        <li>Address: Tasinga Bisawar Hathras </li>
+        <li>Phone:  6395******</li>
+        <li>Follow us</li>
+        <li><a href="">Instagram</a></li>
+      </ul>
+     </div>
+
+    <div> <p>About</p>
+   <ul>
+    <li>About us</li>
+    <li>Deleivery Information</li>
+    <li>privacy policy</li>
+    <li>Terms & Condition</li>
+    <li>Contact us</li>
+   </ul>
+    </div>
+<div> <p>My Account</p>
+
+    <ul>
+        <li>Sign IN</li>
+        <li>View Cart</li>
+        <li>My Wishlist</li>
+        <li>Track My Order</li>
+        <li>Help</li>
+    </ul>
+
+ </div>
+</footer>
+
+
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="home.js"></script>
+<script>
+  let menu = document.getElementById("hamBurger");
+menu.addEventListener("click",()=>{
+    document.getElementById("sidebar").style="display:block;"
+});
+
+let cross = document.getElementById("cross").addEventListener("click",()=>{
+    document.getElementById("sidebar").style="display:none;" 
+})
+
+</script>
+</body>
+</html>
